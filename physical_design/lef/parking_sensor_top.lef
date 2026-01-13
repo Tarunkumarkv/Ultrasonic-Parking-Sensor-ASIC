@@ -1,0 +1,119 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO parking_sensor_top
+  CLASS BLOCK ;
+  FOREIGN parking_sensor_top ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 76.005 BY 86.725 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 73.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 49.340 10.640 50.940 73.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 30.030 70.620 31.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 55.030 70.620 56.630 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 73.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 46.040 10.640 47.640 73.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 26.730 70.620 28.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 51.730 70.620 53.330 ;
+    END
+  END VPWR
+  PIN alarm_warning
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 45.170 82.725 45.450 86.725 ;
+    END
+  END alarm_warning
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 64.640 4.000 65.240 ;
+    END
+  END clk
+  PIN echo_pulse
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 72.005 37.440 76.005 38.040 ;
+    END
+  END echo_pulse
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 72.005 34.040 76.005 34.640 ;
+    END
+  END reset
+  PIN trigger_pulse
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 72.005 23.840 76.005 24.440 ;
+    END
+  END trigger_pulse
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 70.570 73.630 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 70.380 73.525 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 70.380 73.680 ;
+      LAYER met2 ;
+        RECT 7.920 82.445 44.890 83.370 ;
+        RECT 45.730 82.445 69.370 83.370 ;
+        RECT 7.920 10.695 69.370 82.445 ;
+      LAYER met3 ;
+        RECT 4.000 65.640 72.005 73.605 ;
+        RECT 4.400 64.240 72.005 65.640 ;
+        RECT 4.000 38.440 72.005 64.240 ;
+        RECT 4.000 37.040 71.605 38.440 ;
+        RECT 4.000 35.040 72.005 37.040 ;
+        RECT 4.000 33.640 71.605 35.040 ;
+        RECT 4.000 24.840 72.005 33.640 ;
+        RECT 4.000 23.440 71.605 24.840 ;
+        RECT 4.000 10.715 72.005 23.440 ;
+  END
+END parking_sensor_top
+END LIBRARY
+
