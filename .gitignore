@@ -1,0 +1,13 @@
+# Icarus Verilog simulation binaries and outputs
+*.vvp
+*.vcd
+*.lxt
+*.lxt2
+*.sav
+*.o
+sim_*
+*_sim
+
+# macOS / Editor artifacts
+.DS_Store
+*~
