@@ -2,10 +2,7 @@
 
 **Deterministic 20 MHz Digital Time-of-Flight Controller · RTL-to-GDSII Implementation on SkyWater 130nm (`sky130_fd_sc_hd`)**
 
-[![Interactive Floorplan & Waveform](https://img.shields.io/badge/Interactive_Silicon_Dossier-Explore_Floorplan_%26_20MHz_Waveform-0F172A?style=flat-square&logo=googlechrome&logoColor=38BDF8)](https://tarunkumarkv.github.io/#floorplan)
-[![PDK](https://img.shields.io/badge/PDK-SkyWater_130nm_(sky130__fd__sc__hd)-1E293B?style=flat-square)](https://github.com/google/skywater-pdk)
-[![Flow](https://img.shields.io/badge/EDA_Flow-OpenLane_2_%7C_Yosys_%7C_OpenROAD_%7C_Magic_%7C_KLayout-1E293B?style=flat-square)](https://github.com/efabless/openlane2)
-[![DRC / LVS](https://img.shields.io/badge/Physical_Signoff-0_DRC_%7C_0_LVS_%7C_0_Antenna-059669?style=flat-square)]()
+**PDK:** `SkyWater 130nm (sky130_fd_sc_hd)` &nbsp;·&nbsp; **Flow:** `OpenLane 2 · Yosys · OpenROAD · Magic · KLayout` &nbsp;·&nbsp; **Signoff:** `0 DRC · 0 LVS · 0 Antenna` &nbsp;·&nbsp; [**Interactive Die Floorplan & 20 MHz Waveform ↗**](https://tarunkumarkv.github.io/#floorplan)
 
 ---
 
